@@ -1,0 +1,14 @@
+{
+    "name": "pablo/pfc-pablo",
+    "description": "Proyecto de fin de ciclo",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PabloIC",
+            "email": "iravedracambre1992@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
