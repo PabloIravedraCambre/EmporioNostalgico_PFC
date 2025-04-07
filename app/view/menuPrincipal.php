@@ -7,6 +7,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
   <!-- Bootstrap CSS en modo LTR -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/estilosPrincipal.css">
 </head>
 <body>
 
