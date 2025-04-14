@@ -42,23 +42,17 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
+    <div id="contenedorList">
+  <ul>
+      <li><a href="#"><img src="./imagenesTiendaNostalgica/carrito.png" alt="carrito" class="iconos">Carro</a></li>
+      <li><a href="#"><img src="./imagenesTiendaNostalgica/favoritos.png" alt="favoritos" class="iconos">Favoritos</a></li>
+      <li><a href="#"><img src="./imagenesTiendaNostalgica/iniciarSesion.png" alt="loginUsuario" class="iconos">Iniciar Sesión</a></li>
+  </ul>
+</div>
   </div>
 </header>
 
 <main>
-
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Un pequeño vistazo a lo que encontrarás</h1>
-        <p class="lead text-muted">"Somos nuestro pasado, y siempre podremos volver a él."</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Producto anterior</a>
-          <a href="#" class="btn btn-secondary my-2">Siguiente Producto</a>
-        </p>
-      </div>
-    </div>
-  </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
@@ -67,22 +61,38 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Imagen de muestra"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Imagen de muestra</title>
-              <rect width="100%" height="100%" fill="#55595c" />
-              <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">Miniatura</text>
-            </svg>
+            <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                </div>
+                <small class="text-muted">30€</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <div class="card-body">
-              <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo como introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+        <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+              <p class="card-text"></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
                 </div>
-                <small class="text-muted">9 minutos</small>
+                <small class="text-muted">30€</small>
               </div>
             </div>
           </div>
