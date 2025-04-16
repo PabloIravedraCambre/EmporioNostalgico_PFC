@@ -74,7 +74,39 @@
               </div>
             </div>
           </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                </div>
+                <small class="text-muted">30€</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                </div>
+                <small class="text-muted">30€</small>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Segunda fila -->
 
         <div class="album py-5 bg-light">
     <div class="container">
@@ -89,7 +121,37 @@
               <p class="card-text"></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                </div>
+                <small class="text-muted">30€</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                </div>
+                <small class="text-muted">30€</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
                 </div>
                 <small class="text-muted">30€</small>
@@ -98,8 +160,24 @@
           </div>
         </div>
 
+        
         <!-- Puedes duplicar este bloque para crear más tarjetas -->
-
+        
+        <div class="mt-5">
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">siguiente</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
       </div>
     </div>
   </div>
