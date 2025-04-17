@@ -14,7 +14,7 @@ ul {
   li:hover {
     transform: scale(1.1);
   }
-
+  
   #contenedorList {
     display: flex;
     justify-content:center;
@@ -28,6 +28,7 @@ ul {
   a{
     text-decoration: none;
   }
+
 
 
 
