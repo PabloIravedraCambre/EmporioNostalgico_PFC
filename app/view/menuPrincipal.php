@@ -151,7 +151,7 @@
             <img src="../view/imagenesTiendaNostalgica/Hércules.png" class="card-img-top" alt="Hércules" width="100%" height="225" style="object-fit: cover;">
           </div>
           <div class="card-body">
-          <h4 class="card-title">Hércules: Muñeco de la serie (1995)</h4>
+          <h4 class="card-title">Hércules: Muñeco de la serie</h4>
               <p class="card-text">Sigue igual de fuerte que el primer día, ¡Podría lanzar cualquier cosa!</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
