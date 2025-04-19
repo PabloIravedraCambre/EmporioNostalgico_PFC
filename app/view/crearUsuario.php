@@ -103,7 +103,7 @@
         /**
          * LoginUsuario.php se encarga de trabajar con los formularios de login, el de registrar, y el de actualizar (éste último permite al usuario actualizar su nombre, edad, etc)
          *
-         * @package TiendaMedieval
+         * @package emporionostalgico
          */
 
         require_once "../controller/usuarioController.php";
@@ -147,7 +147,7 @@
             
             // Llamada al controlador para iniciar sesión del usuario
             $UsuarioController->logearUsuario($campoCorreoUsuarioSaneado, $campoContraseniaUsuarioSaneado);
-            header("Location: LoginUsuario.php");
+            header("Location: menuPrincipal.php"); // Redirige a la página principal después de iniciar sesión
         }
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['logout'])) {

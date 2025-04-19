@@ -20,24 +20,24 @@
                 <p class="lead">
                     Introduce tus <mark>datos</mark>:
                 </p>
-                <form action="" method="POST">
+                <form action="iniciarSesion.php" method="POST">
 
                 <div class="col-11 mb-3">
-                        <input type="text" class="form-control" placeholder="Nombre" required></input>
+                        <input type="text" name="Nombre" class="form-control" placeholder="Nombre" required></input>
                         <div class="invalid-feedback">
                             usuario erróneo
                         </div>
                     </div>
 
                     <div class="col-11 mb-3">
-                        <input type="email" class="form-control" placeholder="Correo" required></input>
+                        <input type="email" name="Correo" class="form-control" placeholder="Correo" required></input>
                         <div class="invalid-feedback">
                             Correo erróneo / Escribe un correo
                         </div>
                     </div>
 
                     <div class="col-11 mb-3">
-                        <input type="text" class="form-control" placeholder="Contraseña" required></input>
+                        <input type="password" name="Contrasenia" class="form-control" placeholder="Contraseña" required></input>
                         <div class="invalid-feedback">
                             Contraseña errónea / Escribe una contraseña válida
                         </div>
@@ -76,6 +76,28 @@
             })
         })()
     </script>
+    <?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $correo = htmlspecialchars($_POST['Correo']);
+    $contrasenia = htmlspecialchars($_POST['Contrasenia']);
+
+    require_once "../controller/usuarioController.php";
+    $usuarioController = new usuarioController();
+
+    $resultado = $usuarioController->logearUsuario($correo, $contrasenia);
+
+    if ($resultado) {
+        // Inicio de sesión exitoso
+        session_start();
+        $_SESSION['usuario'] = $resultado['ID_Usuario'];
+        header("Location: menuPrincipal.php");
+        exit();
+    } else {
+        // Credenciales incorrectas
+        echo "<div class='alert alert-danger'>Correo o contraseña incorrectos.</div>";
+    }
+}
+?>
 </body>
 
 </html>

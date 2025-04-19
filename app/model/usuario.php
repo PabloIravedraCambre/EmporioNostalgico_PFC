@@ -1,13 +1,6 @@
 <?php
 require_once "../../config/dbConnection.php";
 
-/**
- * Esta clase representa a un usuario que esta logeado.
- * Esta clase contiene métodos para interactuar con la base de datos para que el usuario pueda hacer tareas como registrarse, loguearse, modificar o cerrar sesión
- *
- * @package TiendaMedieval
- * 
- */
 class usuario {
     /**
      * @var int $idUsuario ID único del usuario.
@@ -143,7 +136,7 @@ class usuario {
             return $id;
 
         } catch (PDOException $e) {
-            echo "Error en la conexión a base de datos";
+            echo "Error en la conexión a base de datos"  . $e->getMessage();
         }
     }
 

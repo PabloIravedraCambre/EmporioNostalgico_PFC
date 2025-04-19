@@ -12,6 +12,46 @@
 <body>
 
 <header>
+<?php
+
+session_start();
+if (isset($_SESSION['nombre'])) {
+  echo "<li>Bienvenid@, " . $_SESSION['nombre'] . "</li>";
+  ?>
+  <form action="" method="POST" id="posicionLogout">
+      <input type="submit" name="logout" value="Cerrar sesión">
+  </form>
+  <form action="" method="POST" id="posicionUpdate">
+      <input type="submit" name="update" value="Actualizar">
+  </form>
+  <?php
+}
+
+
+ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['logout'])) {
+  /**
+   * Éste método maneja el cierre de sesión del usuario.
+   *
+   * Borra todos los datos de sesión, los elimina, y recarga la página.
+   * 
+   */
+  session_unset();
+  session_destroy();
+  header("Refresh:0"); // Recarga la página
+  exit();
+}
+
+ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
+  /**
+   * Éste método maneja la actualización de los datos del usuario.
+   *
+   * Redirige a la página de actualización de datos del usuario.
+   * 
+   */
+  header("Location: actualizarUsuario.php"); //Integrar función de actualizar los datos del usuario
+  exit();
+}
+?>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
@@ -47,6 +87,7 @@
       <li><a href="#"><img src="./imagenesTiendaNostalgica/carrito.png" alt="carrito" class="iconos">Carro</a></li>
       <li><a href="#"><img src="./imagenesTiendaNostalgica/favoritos.png" alt="favoritos" class="iconos">Favoritos</a></li>
       <li><a href="iniciarSesion.php"><img src="./imagenesTiendaNostalgica/iniciarSesion.png" alt="loginUsuario" class="iconos">Iniciar Sesión</a></li>
+
   </ul>
 </div>
   </div>

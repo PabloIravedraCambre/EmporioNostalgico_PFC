@@ -7,7 +7,7 @@
  * Este documento se encarga de manejar las funcionalidades relacionadas con la creación de usuario, el login, o la 
  * actualización de los datos de usuario. Interactúa con el modelo 'usuario.php' para trabajar con la base de datos
  *
- * @package TiendaMedieval
+ * @package emporionostalgico
  * 
  */
 
@@ -54,26 +54,24 @@ class usuarioController {
      * @return void
      */
     public function logearUsuario($correoUsuario, $contraseniaUsuario) {
-        $logearUsuario = new Usuario();
+        $usuario = new Usuario();
 
-        // Asignar los datos de la clase usuarioController al usuario que se haya logueado
-        $logearUsuario->setCorreoUsuario($correoUsuario);
-        $logearUsuario->setContraseniaUsuario($contraseniaUsuario);
+        // Asignar los valores al usuario
+        $usuario->setCorreoUsuario($correoUsuario);
+        $usuario->setContraseniaUsuario($contraseniaUsuario);
 
-        // Intentar logear al usuario
-        $usuario = $logearUsuario->loginUser();
+        // Verificar si el usuario existe y las credenciales son correctas
+        $resultado = $usuario->loginUser();
 
-        // Verificar si los datos son correctos
-        if ($usuario) {
-            // Iniciar sesión y almacenar la información del usuario
-            $_SESSION['usuario'] = $usuario['ID_Usuario'];
-            $_SESSION['nombre'] = $usuario['Nombre_Usuario'];
-            $_SESSION['correo'] = $usuario['Correo_Usuario'];
-            $_SESSION['contrasenia'] = $usuario['Contrasenia_Usuario'];
-
-            
+        if ($resultado) {
+            session_start();
+            $_SESSION['usuario'] = $resultado['ID_Usuario'];
+            $_SESSION['nombre'] = $resultado['Nombre_Usuario'];
+            echo "Bienvenid@, " . $_SESSION['nombre'] . "<br>";
+            return true;
         } else {
-            echo "Correo electronico o contraseña incorrectos.";
+            echo "Credenciales incorrectas.";
+            return false;
         }
     }
 
