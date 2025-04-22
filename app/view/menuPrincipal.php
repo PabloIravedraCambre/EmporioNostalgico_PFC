@@ -87,7 +87,6 @@ if (isset($_SESSION['nombre'])) {
       <li><a href="#"><img src="./imagenesTiendaNostalgica/carrito.png" alt="carrito" class="iconos">Carro</a></li>
       <li><a href="#"><img src="./imagenesTiendaNostalgica/favoritos.png" alt="favoritos" class="iconos">Favoritos</a></li>
       <li><a href="iniciarSesion.php"><img src="./imagenesTiendaNostalgica/iniciarSesion.png" alt="loginUsuario" class="iconos">Iniciar Sesión</a></li>
-
   </ul>
 </div>
   </div>
@@ -101,7 +100,7 @@ if (isset($_SESSION['nombre'])) {
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card border-secondary mb-2 shadow-sm">
             <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
           </div>
           <div class="card-body">
@@ -109,15 +108,14 @@ if (isset($_SESSION['nombre'])) {
               <p class="card-text">Una increíble </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Favorito</button>
+                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
                 </div>
                 <div class="d-inline p-2 bg-primary text-white">29€</div>
               </div>
             </div>
           </div>
           <div class="col">
-          <div class="card shadow-sm">
+          <div class="card border-secondary mb-2 shadow-sm">
             <img src="../view/imagenesTiendaNostalgica/gárgola.png" class="card-img-top" alt="gárgola" width="100%" height="225" style="object-fit: cover;">
           </div>
           <div class="card-body">
@@ -125,8 +123,7 @@ if (isset($_SESSION['nombre'])) {
               <p class="card-text">Muñeco de gárgola</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
                 </div>
                 <div class="d-inline p-2 bg-primary text-white">12€</div>
               </div>
@@ -134,7 +131,7 @@ if (isset($_SESSION['nombre'])) {
           </div>
 
           <div class="col">
-          <div class="card shadow-sm">
+          <div class="card border-secondary mb-2 shadow-sm">
             <img src="../view/imagenesTiendaNostalgica/misterMusculo.png" class="card-img-top" alt="misterMusculo" width="100%" height="225" style="object-fit: cover;">
           </div>
           <div class="card-body">
@@ -142,8 +139,8 @@ if (isset($_SESSION['nombre'])) {
               <p class="card-text">¡Se estira!</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
+                  
                 </div>
                 <div class="d-inline p-2 bg-primary text-white">20€</div>
               </div>
@@ -154,7 +151,7 @@ if (isset($_SESSION['nombre'])) {
         <!-- Segunda fila -->
 
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card border-secondary mb-2 shadow-sm">
             <img src="../view/imagenesTiendaNostalgica/metalgreymon.png" class="card-img-top" alt="metalgreymon" width="100%" height="225" style="object-fit: cover;">
           </div>
           <div class="card-body">
@@ -162,8 +159,8 @@ if (isset($_SESSION['nombre'])) {
               <p class="card-text">¿Un tiranosaurio cibernético? ¡Aquí tienes uno! Los misiles se venden por separado.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
+                  
                 </div>
                 <div class="d-inline p-2 bg-primary text-white">15€</div>
               </div>
@@ -171,7 +168,7 @@ if (isset($_SESSION['nombre'])) {
           </div>
 
           <div class="col">
-          <div class="card shadow-sm">
+          <div class="card border-secondary mb-2 shadow-sm">
             <img src="../view/imagenesTiendaNostalgica/streetshark.png" class="card-img-top" alt="streetshark" width="100%" height="225" style="object-fit: cover;">
           </div>
           <div class="card-body">
@@ -179,8 +176,8 @@ if (isset($_SESSION['nombre'])) {
               <p class="card-text">¿Existe algo más peligroso que una orca? Sí, ¡Una con pantalones!</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
+                  
                 </div>
                 <div class="d-inline p-2 bg-primary text-white">8€</div>
               </div>
@@ -188,7 +185,7 @@ if (isset($_SESSION['nombre'])) {
           </div>
 
           <div class="col">
-          <div class="card shadow-sm">
+          <div class="card border-secondary mb-2 shadow-sm">
             <img src="../view/imagenesTiendaNostalgica/Hércules.png" class="card-img-top" alt="Hércules" width="100%" height="225" style="object-fit: cover;">
           </div>
           <div class="card-body">
@@ -196,8 +193,8 @@ if (isset($_SESSION['nombre'])) {
               <p class="card-text">Sigue igual de fuerte que el primer día, ¡Podría lanzar cualquier cosa!</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Guardar en favoritos</button>
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
+              
                 </div>
                 <div class="d-inline p-2 bg-primary text-white">16€</div>
               </div>
