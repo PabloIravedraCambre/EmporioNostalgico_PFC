@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menú Principal - Emporio Nostálgico</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-  <!-- Bootstrap CSS en modo LTR -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/estilosPrincipal.css">
 </head>
@@ -29,25 +28,13 @@ if (isset($_SESSION['nombre'])) {
 
 
  if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['logout'])) {
-  /**
-   * Éste método maneja el cierre de sesión del usuario.
-   *
-   * Borra todos los datos de sesión, los elimina, y recarga la página.
-   * 
-   */
   session_unset();
   session_destroy();
-  header("Refresh:0"); // Recarga la página
+  header("Refresh:0");
   exit();
 }
 
  if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
-  /**
-   * Éste método maneja la actualización de los datos del usuario.
-   *
-   * Redirige a la página de actualización de datos del usuario.
-   * 
-   */
   header("Location: actualizarUsuario.php"); //Integrar función de actualizar los datos del usuario
   exit();
 }
@@ -62,6 +49,9 @@ if (isset($_SESSION['nombre'])) {
             y adolescencia. Desde videojuegos o juguetes a películas noventeras, seguro que encuentras algo que te encante.
             ¡Pásalo muy bien por aquí! 
           </p>
+          <figcaption class="blockquote-footer">
+            Pablo Iravedra Cambre
+          </figcaption>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Contacto</h4>
@@ -91,140 +81,105 @@ if (isset($_SESSION['nombre'])) {
 </div>
   </div>
 </header>
-
 <main>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-        <div class="col">
-          <div class="card border-secondary mb-2 shadow-sm">
-            <img src="../view/imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="producto1" width="100%" height="225" style="object-fit: cover;">
-          </div>
-          <div class="card-body">
-          <h4 class="card-title">Mansión de Casper</h4>
-              <p class="card-text">Una increíble </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="productoCasper.php"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
-                </div>
-                <div class="d-inline p-2 bg-primary text-white">29€</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-          <div class="card border-secondary mb-2 shadow-sm">
-            <img src="../view/imagenesTiendaNostalgica/gárgola.png" class="card-img-top" alt="gárgola" width="100%" height="225" style="object-fit: cover;">
-          </div>
-          <div class="card-body">
-          <h4 class="card-title">Gárgolas: Muñeco 'Goliath'</h4>
-              <p class="card-text">Muñeco de gárgola</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
-                </div>
-                <div class="d-inline p-2 bg-primary text-white">12€</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-          <div class="card border-secondary mb-2 shadow-sm">
-            <img src="../view/imagenesTiendaNostalgica/misterMusculo.png" class="card-img-top" alt="misterMusculo" width="100%" height="225" style="object-fit: cover;">
-          </div>
-          <div class="card-body">
-          <h4 class="card-title">Míster Músculo</h4>
-              <p class="card-text">¡Se estira!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
-                  
-                </div>
-                <div class="d-inline p-2 bg-primary text-white">20€</div>
-              </div>
-            </div>
-          </div>
-          
-
-        <!-- Segunda fila -->
-
-        <div class="col">
-          <div class="card border-secondary mb-2 shadow-sm">
-            <img src="../view/imagenesTiendaNostalgica/metalgreymon.png" class="card-img-top" alt="metalgreymon" width="100%" height="225" style="object-fit: cover;">
-          </div>
-          <div class="card-body">
-          <h4 class="card-title">Digimon: MetalGreymon</h4>
-              <p class="card-text">¿Un tiranosaurio cibernético? ¡Aquí tienes uno! Los misiles se venden por separado.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
-                  
-                </div>
-                <div class="d-inline p-2 bg-primary text-white">15€</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-          <div class="card border-secondary mb-2 shadow-sm">
-            <img src="../view/imagenesTiendaNostalgica/streetshark.png" class="card-img-top" alt="streetshark" width="100%" height="225" style="object-fit: cover;">
-          </div>
-          <div class="card-body">
-          <h4 class="card-title">StreetShark: Moby Lick</h4>
-              <p class="card-text">¿Existe algo más peligroso que una orca? Sí, ¡Una con pantalones!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
-                  
-                </div>
-                <div class="d-inline p-2 bg-primary text-white">8€</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-          <div class="card border-secondary mb-2 shadow-sm">
-            <img src="../view/imagenesTiendaNostalgica/Hércules.png" class="card-img-top" alt="Hércules" width="100%" height="225" style="object-fit: cover;">
-          </div>
-          <div class="card-body">
-          <h4 class="card-title">Hércules: Muñeco de la serie</h4>
-              <p class="card-text">Sigue igual de fuerte que el primer día, ¡Podría lanzar cualquier cosa!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ver producto</button></a>
-              
-                </div>
-                <div class="d-inline p-2 bg-primary text-white">16€</div>
-              </div>
-            </div>
-          </div>
-        
-        <!-- Puedes duplicar este bloque para crear más tarjetas -->
-        
-        <div class="mt-5">
-        <nav>
-          <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1">anterior</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="página2.php">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">siguiente</a>
-            </li>
-          </ul>
-        </nav>
-        </div>
+<div class="card mb-3">
+  <img src="../view/imagenesTiendaNostalgica/imagenPresentación.png" class="card-img-top" alt="...">
+</div>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mansión de Casper</h5>
+        <p class="card-text">Está muy bien (texto en desarrollo)</p>
       </div>
     </div>
   </div>
-</main>
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/gárgola.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Muñeco serie Gárgolas</h5>
+        <p class="card-text">es una gárgola</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/misterMusculo.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mister Músculo</h5>
+        <p class="card-text">¡Se estira!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/metalgreymon.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Metalgreymon (Digimon)</h5>
+        <p class="card-text">me encantaba de pequeño</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Segunda fila -->
 
+<div class="row row-cols-1 row-cols-md-4 g-4 mt-4 mb-4">
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/Hércules.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Muñeco de Hércules</h5>
+        <p class="card-text">El oficial de la serie</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/streetshark.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Muñeco serie Gárgolas</h5>
+        <p class="card-text">es una gárgola</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/misterMusculo.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mister Músculo</h5>
+        <p class="card-text">¡Se estira!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./imagenesTiendaNostalgica/metalgreymon.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Metalgreymon (Digimon)</h5>
+        <p class="card-text">me encantaba de pequeño</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paginación Bootstrap -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="./página2.php">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Siguiente</a>
+    </li>
+  </ul>
+</nav>
+</main>
 <!-- Bootstrap Bundle con JS incluido -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
