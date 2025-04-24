@@ -7,6 +7,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/estilosPrincipal.css">
+  <script src="../view/js/funcionesEmporio.js"></script>
 </head>
 <body>
 
@@ -85,13 +86,17 @@ if (isset($_SESSION['nombre'])) {
 <div class="card mb-3">
   <img src="../view/imagenesTiendaNostalgica/imagenPresentación.png" class="card-img-top" alt="...">
 </div>
-<div class="row row-cols-1 row-cols-md-4 g-4">
+<div class="row row-cols-1 row-cols-md-4">
   <div class="col">
     <div class="card">
       <img src="./imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Mansión de Casper</h5>
-        <p class="card-text">Está muy bien (texto en desarrollo)</p>
+        <p class="card-text fst-italic">Está muy bien (texto en desarrollo)</p>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-info" type="button">Ver Producto</button>
+          <h4><span class="badge bg-secondary mt-3">Precio: 20€</span></h4>
+        </div>
       </div>
     </div>
   </div>
@@ -100,7 +105,17 @@ if (isset($_SESSION['nombre'])) {
       <img src="./imagenesTiendaNostalgica/gárgola.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Muñeco serie Gárgolas</h5>
-        <p class="card-text">es una gárgola</p>
+        <p class="card-text fst-italic">De la serie animada de las gárgolas</p>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-info" type="button">Ver Producto</button>
+          <h4><span class="badge bg-secondary mt-3">Precio: 12€</span></h4>
+        </div>
+        <html>
+          <div id="curiosidadGargola">
+            <p>La verdad es que estaba muy bien animada</p>
+          </div>
+            <button id="pulsaGargola">¡Pulsa para leer una curiosidad!</button>
+        </html>
       </div>
     </div>
   </div>
@@ -139,17 +154,17 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/streetshark.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Muñeco serie Gárgolas</h5>
-        <p class="card-text">es una gárgola</p>
+        <h5 class="card-title">Orca Streetshark</h5>
+        <p class="card-text">Una orca con pantalones</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="./imagenesTiendaNostalgica/misterMusculo.png" class="card-img-top" alt="...">
+      <img src="./imagenesTiendaNostalgica/gijoe.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Mister Músculo</h5>
-        <p class="card-text">¡Se estira!</p>
+        <h5 class="card-title">Ninja Gi-Joe</h5>
+        <p class="card-text">Un ninja articulado</p>
       </div>
     </div>
   </div>
