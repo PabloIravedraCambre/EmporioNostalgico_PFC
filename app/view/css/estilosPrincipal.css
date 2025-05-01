@@ -1,4 +1,4 @@
-
+  
   ul {
     list-style: none;
   }
@@ -21,6 +21,12 @@
   a{
     text-decoration: none;
   }
+
+  .iconoFavorito{
+    background-color: none;
+    width: 15px
+  
+  }
   
   #infoCasper{
     display: none; 
@@ -34,11 +40,16 @@
     display: none; 
   }
 
+  #infoGreymon{
+    display: none; 
+  }
+
   .descripciones{
     margin-top: 7px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
   }
+
 
   
 

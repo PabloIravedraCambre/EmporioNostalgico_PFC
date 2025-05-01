@@ -89,7 +89,7 @@ if (isset($_SESSION['nombre'])) {
 <div class="row row-cols-1 row-cols-md-5 justify-content-center">
   <div class="col">
     <div class="card">
-      <img src="./imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="...">
+      <img src="./imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="..." id="zoom">
       <div class="card-body">
         <h5 class="card-title">Mansión de Casper</h5>
         <p class="card-text fst-italic">Está muy bien (texto en desarrollo)</p>
@@ -166,7 +166,18 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Metalgreymon (Digimon)</h5>
         <p class="card-text fst-italic">Un T-Rex que lanza cohetes</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+          <button class="btn btn-info" type="button" id="botonGreymon">Ver Producto</button>
+          <div id="infoGreymon">
+            <p class="descripciones">Los cohetes que lanza se venden por separado, sorry, 
+              yo no pongo las normas...
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="4">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 18,5€</span></h4>
         </div>
       </div>

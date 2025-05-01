@@ -36,7 +36,7 @@ if (isset($_SESSION['nombre'])) {
          * @var int $usuarioId es el ID del usuario logueado en la sesión actual
          */
 
-        $idUsuario = $_SESSION['usuario']; 
+        $idUsuario = $_SESSION['id_usuario']; // Este ID debe haberse guardado al iniciar sesión
 
 
         // Paso 3: Establecemos conexión con la base de datos

@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", mostrarTextoOculto);
 
 //Añadimos un escuchador para el botón
 
-
 function mostrarTextoOculto(){
 
     var casper = document.getElementById("botonCasper");
@@ -13,6 +12,9 @@ function mostrarTextoOculto(){
 
     var musculo = document.getElementById("botonMusculo");
     var divMusculo = document.getElementById("infoMusculo");
+
+    var greymon = document.getElementById("botonGreymon");
+    var divGreymon = document.getElementById("infoGreymon");
 
     //Añadir el evento al botón
 
@@ -42,4 +44,15 @@ function mostrarTextoOculto(){
                 divMusculo.style.display = "none";
               }
         });
+
+    greymon.addEventListener("click",
+        function(){
+            if (window.getComputedStyle(divGreymon).display === "none") {
+                divGreymon.style.display = "block";
+              } else {
+                divGreymon.style.display = "none";
+              }
+        });
 }
+
+

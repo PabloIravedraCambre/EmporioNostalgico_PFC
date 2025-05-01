@@ -89,7 +89,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($resultado) {
         // Inicio de sesión exitoso
         session_start();
-        $_SESSION['usuario'] = $resultado['ID_Usuario'];
+        $_SESSION['id_usuario'] = $resultado['ID_Usuario'];
+        $_SESSION['nombre'] = $resultado['Nombre_Usuario'];
         header("Location: menuPrincipal.php");
         exit();
     } else {

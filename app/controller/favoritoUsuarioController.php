@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     /**
      * @var int $usuarioId  esta variable es el ID del usuario logueado.
      */
-    $usuarioId = $_SESSION['nombre']; // Este ID debe haberse guardado al iniciar sesión
+    $usuarioId = $_SESSION['id_usuario']; // Este ID debe haberse guardado al iniciar sesión
 
     try {
         // Paso 7: Establecemos conexión con la base de datos
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $consultaInsertar->execute([$usuarioId, $ID_Producto]);
 
             // Paso 11: Redirigimos a la página de favoritos tras insertar
-            header('Location: FavoritosUsuario.php');
+            header('Location: paginaFavoritos.php');
             exit;
         } else {
             // Paso 12: Si ya está en favoritos, mostramos un mensaje

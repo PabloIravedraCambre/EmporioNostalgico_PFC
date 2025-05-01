@@ -64,13 +64,8 @@ class usuarioController {
         $resultado = $usuario->loginUser();
 
         if ($resultado) {
-            session_start();
-            $_SESSION['usuario'] = $resultado['ID_Usuario'];
-            $_SESSION['nombre'] = $resultado['Nombre_Usuario'];
-            echo "Bienvenid@, " . $_SESSION['nombre'] . "<br>";
-            return true;
+            return $resultado;
         } else {
-            echo "Credenciales incorrectas.";
             return false;
         }
     }
