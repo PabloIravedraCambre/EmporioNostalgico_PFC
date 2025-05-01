@@ -6,6 +6,7 @@
   li {
     display: inline-block;
     padding: 0 23px;
+    transform: transform 0.3s;
   }
 
   li:hover {
@@ -21,5 +22,23 @@
     text-decoration: none;
   }
   
+  #infoCasper{
+    display: none; 
+  }
+
+  #infoGargola{
+    display: none; 
+  }
+
+  #infoMusculo{
+    display: none; 
+  }
+
+  .descripciones{
+    margin-top: 7px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+  }
+
   
 

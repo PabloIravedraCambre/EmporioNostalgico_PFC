@@ -7,6 +7,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/estilosPrincipal.css">
+  <script src="../view/js/funcionesEmporio.js"></script>
 </head>
 <body>
 
@@ -75,7 +76,7 @@ if (isset($_SESSION['nombre'])) {
     <div id="contenedorList">
   <ul>
       <li><a href="#"><img src="./imagenesTiendaNostalgica/carrito.png" alt="carrito" class="iconos">Carro</a></li>
-      <li><a href="#"><img src="./imagenesTiendaNostalgica/favoritos.png" alt="favoritos" class="iconos">Favoritos</a></li>
+      <li><a href="paginaFavoritos.php"><img src="./imagenesTiendaNostalgica/favoritos.png" alt="favoritos" class="iconos">Favoritos</a></li>
       <li><a href="iniciarSesion.php"><img src="./imagenesTiendaNostalgica/iniciarSesion.png" alt="loginUsuario" class="iconos">Iniciar Sesión</a></li>
   </ul>
 </div>
@@ -93,7 +94,18 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Mansión de Casper</h5>
         <p class="card-text fst-italic">Está muy bien (texto en desarrollo)</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+          <button class="btn btn-info" type="button" id="botonCasper">Ver Producto</button>
+          <div id="infoCasper">
+            <p class="descripciones">Esta mansión hará las delicias de los más pequeños de la casa.
+              Cuenta con un diseño intrincado, repleto de secretos y pasadizos ocultos
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="1">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 20€</span></h4>
         </div>
       </div>
@@ -106,7 +118,18 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Muñeco Gárgolas</h5>
         <p class="card-text fst-italic">De la serie animada de las gárgolas</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+          <button class="btn btn-info" type="button" id="botonGargola">Ver Producto</button>
+          <div id="infoGargola">
+            <p class="descripciones">Estas gárgolas son muy poderosas y todo un clásico de 
+              la animación de los 90
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="2">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 12€</span></h4>
         </div>
       </div>
@@ -119,7 +142,18 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Mister Músculo</h5>
         <p class="card-text fst-italic">¡Se estira hasta dónde quieras, y no poco!</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+          <button class="btn btn-info" type="button" id="botonMusculo">Ver Producto</button>
+          <div id="infoMusculo">
+            <p class="descripciones">De pequeño conseguí estirarlo hasta el fondo del pasillo,
+              por lo que el producto da lo que promete.
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="3">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 7€</span></h4>
         </div>
       </div>
