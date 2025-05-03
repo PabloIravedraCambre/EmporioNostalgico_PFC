@@ -57,8 +57,19 @@ if (isset($_SESSION['nombre'])) {
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Contacto</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Sígueme en Github</a></li>
-            <li><a href="#" class="text-white">Escríbeme por correo</a></li>
+            <li><a href="https://github.com/PabloIravedraCambre/EmporioNostalgico_PFC" class="text-white">Sígueme en Github</a></li>
+            <li><a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Preferencias</a></li>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">¿Qué te interesa más?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <form action="#" method="POST">
+                  <input type="checkbox" name="preferencias" value="videojuegos">Videojuegos clásicos<br>
+                </form>
+            </div>
+        </div>
           </ul>
         </div>
       </div>
