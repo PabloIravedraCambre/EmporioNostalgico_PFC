@@ -94,8 +94,11 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Mansión de Casper</h5>
         <p class="card-text fst-italic">Está muy bien (texto en desarrollo)</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button" id="botonCasper">Ver Producto</button>
-          <div id="infoCasper">
+          <!-- He utilizado data-bs-target para tener cada producto bien diferenciado a la hora
+        de mostrar u ocultar su div correspondiente. Esto hace que se reduzca considerablemente el
+        código a la hora de mostrar el texto de cada producto -->
+          <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-casper" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-casper">
             <p class="descripciones">Esta mansión hará las delicias de los más pequeños de la casa.
               Cuenta con un diseño intrincado, repleto de secretos y pasadizos ocultos
               <form action="../controller/favoritoUsuarioController.php" method="POST">
@@ -118,10 +121,9 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Muñeco Gárgolas</h5>
         <p class="card-text fst-italic">De la serie animada de las gárgolas</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button" id="botonGargola">Ver Producto</button>
-          <div id="infoGargola">
-            <p class="descripciones">Estas gárgolas son muy poderosas y todo un clásico de 
-              la animación de los 90
+        <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-gargola" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-gargola">
+            <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
               <form action="../controller/favoritoUsuarioController.php" method="POST">
                     <input type="hidden" name="productoId" value="2">
                     <button type="submit">
@@ -142,10 +144,9 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Mister Músculo</h5>
         <p class="card-text fst-italic">¡Se estira hasta dónde quieras, y no poco!</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button" id="botonMusculo">Ver Producto</button>
-          <div id="infoMusculo">
-            <p class="descripciones">De pequeño conseguí estirarlo hasta el fondo del pasillo,
-              por lo que el producto da lo que promete.
+        <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-musculo" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-musculo">
+            <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
               <form action="../controller/favoritoUsuarioController.php" method="POST">
                     <input type="hidden" name="productoId" value="3">
                     <button type="submit">
@@ -166,10 +167,9 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Metalgreymon (Digimon)</h5>
         <p class="card-text fst-italic">Un T-Rex que lanza cohetes</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button" id="botonGreymon">Ver Producto</button>
-          <div id="infoGreymon">
-            <p class="descripciones">Los cohetes que lanza se venden por separado, sorry, 
-              yo no pongo las normas...
+        <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-greymon" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-greymon">
+            <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
               <form action="../controller/favoritoUsuarioController.php" method="POST">
                     <input type="hidden" name="productoId" value="4">
                     <button type="submit">
@@ -194,7 +194,17 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Muñeco de Hércules</h5>
         <p class="card-text fst-italic">El oficial de la serie</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+        <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-hercules" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-hercules">
+            <p class="descripciones">Hércules es genial
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="5">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 6€</span></h4>
         </div>
       </div>
@@ -207,7 +217,17 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Orca Streetshark</h5>
         <p class="card-text fst-italic">Una orca con pantalones</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+        <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-orca" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-orca">
+            <p class="descripciones">Una increíble orca con pantalones
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="6">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 8,30€</span></h4>
         </div>
       </div>
@@ -220,7 +240,17 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Ninja Gi-Joe</h5>
         <p class="card-text fst-italic">Un ninja articulado</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+        <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-ninja" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-ninja">
+            <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="7">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 4€</span></h4>
         </div>
       </div>
@@ -233,7 +263,17 @@ if (isset($_SESSION['nombre'])) {
         <h5 class="card-title">Buzz Lightyear</h5>
         <p class="card-text fst-italic">¡Hasta tu cartera y más allá!</p>
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-info" type="button">Ver Producto</button>
+        <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-buzz" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+          <div class="collapse" id="divOculto-buzz">
+            <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
+              <form action="../controller/favoritoUsuarioController.php" method="POST">
+                    <input type="hidden" name="productoId" value="8">
+                    <button type="submit">
+                      <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    </button>
+              </form>
+            </p>
+          </div>
           <h4><span class="badge bg-secondary mt-3">Precio: 23€</span></h4>
         </div>
       </div>
