@@ -28,7 +28,15 @@
   
   }
   
-  
+  .zoom{
+    width: 20px;
+    height: 20px;
+  }
+
+  .zoom:hover{
+    transform: scale(1.2);
+    cursor: grab;
+  }
 
   .descripciones{
     margin-top: 7px;

@@ -89,9 +89,11 @@ if (isset($_SESSION['nombre'])) {
 <div class="row row-cols-1 row-cols-md-5 justify-content-center">
   <div class="col">
     <div class="card">
-      <img src="./imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="..." id="zoom">
+      <img src="./imagenesTiendaNostalgica/producto1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Mansión de Casper</h5>
+        <h5 class="card-title">Mansión de Casper
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">Está muy bien (texto en desarrollo)</p>
         <div class="d-grid gap-2 d-md-block">
           <!-- He utilizado data-bs-target para tener cada producto bien diferenciado a la hora
