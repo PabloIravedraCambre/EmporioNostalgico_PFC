@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", ampliarImágenes);
+document.addEventListener("DOMContentLoaded", logrosPerfil);
 
 function ampliarImágenes() {
 
@@ -11,4 +12,10 @@ function ampliarImágenes() {
         });
     }
 
+}
+
+function logrosPerfil() {
+
+    // En desarrollo
+    
 }

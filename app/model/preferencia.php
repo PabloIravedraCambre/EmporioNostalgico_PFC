@@ -8,6 +8,13 @@ class preferencias{
     private $epocaPreferencia;
     private $cantidadPreferencia;
 
+    public function __construct($idPreferencia, $nombrePreferencia, $epocaPreferencia, $cantidadPreferencia){
+        $this -> idPreferencia = $idPreferencia;
+        $this -> nombrePreferencia = $nombrePreferencia;
+        $this -> epocaPreferencia = $epocaPreferencia;
+        $this -> cantidadPreferencia = $cantidadPreferencia;
+    }
+
     public function getIdPreferencia(){
         return $this->idPreferencia;
     }

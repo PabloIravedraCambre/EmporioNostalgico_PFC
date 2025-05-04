@@ -8,6 +8,13 @@ class producto{
     private $idProducto;
     private $cantidadProducto;
 
+    public function __construct($nombreProducto, $precioProducto, $idProducto, $cantidadProducto){
+        $this -> nombreProducto = $nombreProducto;
+        $this -> precioProducto = $precioProducto;
+        $this -> idProducto = $idProducto;
+        $this -> cantidadProducto = $cantidadProducto;
+    }
+
     public function getNombre(){
         return $this -> nombreProducto;
     }
