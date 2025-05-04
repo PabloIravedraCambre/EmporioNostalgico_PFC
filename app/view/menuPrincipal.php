@@ -66,8 +66,28 @@ if (isset($_SESSION['nombre'])) {
               </div>
               <div class="offcanvas-body">
                 <form action="#" method="POST">
-                  <input type="checkbox" name="preferencias" value="videojuegos">Videojuegos clásicos<br>
-                </form>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="elecciones" id="videojuegos" value="videojuegos">
+                    <label class="form-check-label" for="radioDefault1">
+                      Videojuegos
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="elecciones" id="películas" value="películas">
+                    <label class="form-check-label" for="radioDefault1">
+                      Películas
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="elecciones" id="juguetes" value="juguetes">
+                    <label class="form-check-label" for="radioDefault1">
+                      Juguetes
+                    </label>
+                </div>
+                <label for="fecha">Introduce tu fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha">
+                <input type="submit" value="Enviar">
+                </form>   
             </div>
         </div>
           </ul>
@@ -131,7 +151,9 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/gárgola.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Muñeco Gárgolas</h5>
+        <h5 class="card-title">Muñeco Gárgolas
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">De la serie animada de las gárgolas</p>
         <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-gargola" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -154,7 +176,9 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/misterMusculo.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Mister Músculo</h5>
+        <h5 class="card-title">Mister Músculo
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">¡Se estira hasta dónde quieras, y no poco!</p>
         <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-musculo" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -177,7 +201,9 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/metalgreymon.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Metalgreymon (Digimon)</h5>
+        <h5 class="card-title">Metalgreymon (Digimon)
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">Un T-Rex que lanza cohetes</p>
         <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-greymon" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -204,7 +230,9 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/Hércules.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Muñeco de Hércules</h5>
+        <h5 class="card-title">Muñeco Hércules
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">El oficial de la serie</p>
         <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-hercules" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -227,7 +255,9 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/streetshark.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Orca Streetshark</h5>
+        <h5 class="card-title">Orca Streetshark
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">Una orca con pantalones</p>
         <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-orca" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -250,7 +280,9 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/gijoe.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Ninja Gi-Joe</h5>
+        <h5 class="card-title">Ninja Gi-Joe
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">Un ninja articulado</p>
         <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-ninja" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -273,7 +305,9 @@ if (isset($_SESSION['nombre'])) {
     <div class="card">
       <img src="./imagenesTiendaNostalgica/buzz.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Buzz Lightyear</h5>
+        <h5 class="card-title">Buzz Lightyear
+        <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+        </h5>
         <p class="card-text fst-italic">¡Hasta tu cartera y más allá!</p>
         <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-buzz" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -308,6 +342,18 @@ if (isset($_SESSION['nombre'])) {
     </li>
   </ul>
 </nav>
+
+<!-- Footer -->
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+        <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 fw-bolder text-decoration-underline">© 2025 El Emporio Nostálgico</span>
+    </div>
+</div>
 </main>
 <!-- Bootstrap Bundle con JS incluido -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
