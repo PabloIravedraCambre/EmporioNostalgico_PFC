@@ -16,6 +16,6 @@ function ampliarImágenes() {
 
 function logrosPerfil() {
 
-    // En desarrollo
+//Utilizar Ajax (?)    
     
 }

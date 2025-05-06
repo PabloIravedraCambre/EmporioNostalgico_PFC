@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-04-2025 a las 20:53:37
+-- Tiempo de generación: 06-05-2025 a las 21:07:25
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -53,6 +53,26 @@ CREATE TABLE `favoritos` (
 
 INSERT INTO `favoritos` (`ID_Favorito`, `ID_Usuario`, `ID_Producto`, `Cantidad_Favoritos`) VALUES
 (1, 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `logros`
+--
+
+CREATE TABLE `logros` (
+  `ID_Logro` int(11) NOT NULL,
+  `ID_Usuario` int(11) NOT NULL,
+  `Nombre_logro` varchar(50) NOT NULL,
+  `Fecha_desbloqueo` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `logros`
+--
+
+INSERT INTO `logros` (`ID_Logro`, `ID_Usuario`, `Nombre_logro`, `Fecha_desbloqueo`) VALUES
+(1, 1, 'logroVolcado', '2025-05-06 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -133,6 +153,12 @@ ALTER TABLE `favoritos`
   ADD PRIMARY KEY (`ID_Favorito`);
 
 --
+-- Indices de la tabla `logros`
+--
+ALTER TABLE `logros`
+  ADD PRIMARY KEY (`ID_Logro`);
+
+--
 -- Indices de la tabla `preferencias`
 --
 ALTER TABLE `preferencias`
@@ -165,6 +191,12 @@ ALTER TABLE `cesta`
 --
 ALTER TABLE `favoritos`
   MODIFY `ID_Favorito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `logros`
+--
+ALTER TABLE `logros`
+  MODIFY `ID_Logro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
