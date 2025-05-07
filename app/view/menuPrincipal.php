@@ -27,6 +27,7 @@ if (isset($_SESSION['nombre'])) {
   <?php
 }
 
+  //Función para desloguearse y destruir la sesión
 
  if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['logout'])) {
   session_unset();
