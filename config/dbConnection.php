@@ -2,10 +2,10 @@
 
 function getDBConnection() {
     // Configuración de la base de datos
-    $host = 'localhost';
+    $host = 'db';
     $db_name = "emporionostalgico";
     $username = "root";
-    $password = "";
+    $password = "root";
 
     try {
         // Intentamos establecer la conexión con PDO

@@ -13,7 +13,6 @@
 
 <header>
 <?php
-
 session_start();
 if (isset($_SESSION['nombre'])) {
   echo "<li>Bienvenid@, " . $_SESSION['nombre'] . "</li>";
