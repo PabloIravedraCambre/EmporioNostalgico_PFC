@@ -1,3 +1,26 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $correo = htmlspecialchars($_POST['Correo']);
+    $contrasenia = htmlspecialchars($_POST['Contrasenia']);
+
+    require_once "../controller/usuarioController.php";
+    $usuarioController = new usuarioController();
+
+    $resultado = $usuarioController->logearUsuario($correo, $contrasenia);
+
+    if ($resultado) {
+        // Inicio de sesión exitoso
+        session_start();
+        $_SESSION['id_usuario'] = $resultado['ID_Usuario'];
+        $_SESSION['nombre'] = $resultado['Nombre_Usuario'];
+        header("Location: menuPrincipal.php");
+        exit();
+    } else {
+        // Credenciales incorrectas
+        echo "<div class='alert alert-danger'>Correo o contraseña incorrectos.</div>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,29 +99,7 @@
             })
         })()
     </script>
-    <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $correo = htmlspecialchars($_POST['Correo']);
-    $contrasenia = htmlspecialchars($_POST['Contrasenia']);
 
-    require_once "../controller/usuarioController.php";
-    $usuarioController = new usuarioController();
-
-    $resultado = $usuarioController->logearUsuario($correo, $contrasenia);
-
-    if ($resultado) {
-        // Inicio de sesión exitoso
-        session_start();
-        $_SESSION['id_usuario'] = $resultado['ID_Usuario'];
-        $_SESSION['nombre'] = $resultado['Nombre_Usuario'];
-        header("Location: menuPrincipal.php");
-        exit();
-    } else {
-        // Credenciales incorrectas
-        echo "<div class='alert alert-danger'>Correo o contraseña incorrectos.</div>";
-    }
-}
-?>
 </body>
 
 </html>

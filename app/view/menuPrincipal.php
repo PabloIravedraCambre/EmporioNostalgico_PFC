@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú Principal - Emporio Nostálgico</title>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/estilosPrincipal.css">
-  <script src="../view/js/funcionesEmporio.js"></script>
-</head>
-<body>
-
-<header>
 <?php
 session_start();
 if (isset($_SESSION['nombre'])) {
@@ -40,6 +26,19 @@ if (isset($_SESSION['nombre'])) {
   exit();
 }
 ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Principal - Emporio Nostálgico</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/estilosPrincipal.css">
+  <script src="../view/js/funcionesEmporio.js"></script>
+</head>
+<body>
+<header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">

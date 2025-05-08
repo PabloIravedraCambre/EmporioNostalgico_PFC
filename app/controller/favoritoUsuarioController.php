@@ -15,9 +15,9 @@ require_once '../../config/dbConnection.php';
 // Paso 2: Iniciamos la sesión para poder usar los datos del usuario logueado
 session_start();
 if (isset($_SESSION['nombre'])) {
-    echo "<li>Bienvenid@, " . $_SESSION['nombre'] . "</li>";
+    // echo "<li>Bienvenid@, " . $_SESSION['nombre'] . "</li>";
 } else {
-    echo "Error! Debes iniciar sesión para consultar productos favoritos.";
+    // echo "Error! Debes iniciar sesión para consultar productos favoritos.";
     exit;
   }
 
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Paso 5: Verificamos que el usuario está logueado
     if (!isset($_SESSION['nombre'])) {
-        echo "Error: Debes iniciar sesión para agregar productos a favoritos.";
+        // echo "Error: Debes iniciar sesión para agregar productos a favoritos.";
         exit;
     }
 
@@ -79,8 +79,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
              * @var PDOStatement $consultaInsertar Consulta preparada para insertar el producto en favoritos.
              */
             $consultaInsertar = $conexion->prepare(
-                "INSERT INTO favoritos (ID_Usuario, ID_Producto) 
-                 VALUES (?, ?)"
+                "INSERT INTO favoritos (ID_Usuario, ID_Producto, Cantidad_Favoritos) 
+                 VALUES (?, ?, 1)"
             );
             $consultaInsertar->execute([$usuarioId, $ID_Producto]);
 
