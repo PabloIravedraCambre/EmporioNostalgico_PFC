@@ -143,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
                       <img src="../view/imagenesTiendaNostalgica/producto1.jpg" alt="productoAmpliadoCasper">
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -190,10 +190,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
-                      <img src="#" alt="">
+                      <img src="../view/imagenesProductosAmpliados/gárgolaAmplia.jpg" alt="zoomGargola">
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -223,9 +223,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         <div class="card">
           <img src="./imagenesTiendaNostalgica/misterMusculo.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Mister Músculo
-              <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+            <h5 class="card-title">
+            Míster Músculo
             </h5>
+              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Musculo">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal-Musculo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="../view/imagenesProductosAmpliados/músculoAmpliado.jpg" alt="zoomGargola">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <p class="card-text fst-italic">¡Se estira hasta dónde quieras, y no poco!</p>
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-musculo" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
@@ -244,18 +263,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
           </div>
         </div>
       </div>
+
+      <!-- Producto MetalGreymon -->
+
       <div class="col">
         <div class="card">
           <img src="./imagenesTiendaNostalgica/metalgreymon.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Metalgreymon (Digimon)
-              <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+            <h5 class="card-title">
+            MetalGreymon
             </h5>
-            <p class="card-text fst-italic">Un T-Rex que lanza cohetes</p>
+              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-greymon">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal-greymon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="../view/imagenesTiendaNostalgica/metalgreymon.png" alt="zoomGreymon">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p class="card-text fst-italic">Un T-Rex que lanza cohetes, no se puede pedir más</p>
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-greymon" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-greymon">
-                <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
+                <p class="descripciones">Digimon
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="4">
                   <button type="submit">
@@ -270,17 +311,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </div>
       </div>
     </div>
+
     <!-- Segunda fila -->
+
+    <!-- Producto Hércules -->
 
     <div class="row row-cols-1 row-cols-md-5 g-4 mt-4 mb-4 justify-content-center">
       <div class="col">
         <div class="card">
           <img src="./imagenesTiendaNostalgica/Hércules.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Muñeco Hércules
-              <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+            <h5 class="card-title">
+            Muñeco Hércules
             </h5>
-            <p class="card-text fst-italic">El oficial de la serie</p>
+              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Hercules">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal-Hercules" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="../view/imagenesProductosAmpliados/herculesAmpliado.png" alt="zoomHercules">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p class="card-text fst-italic">El oficial de la serie del año 1995, ¡clásico!</p>
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-hercules" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-hercules">
@@ -298,14 +361,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
           </div>
         </div>
       </div>
+
+      <!-- Producto Orca -->
+
       <div class="col">
         <div class="card">
           <img src="./imagenesTiendaNostalgica/streetshark.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Orca Streetshark
-              <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+           <h5 class="card-title">
+            Muñeco Orca
             </h5>
-            <p class="card-text fst-italic">Una orca con pantalones</p>
+              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Orca">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal-Orca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="../view/imagenesTiendaNostalgica/streetshark.png" alt="zoomOrca">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p class="card-text fst-italic">Una orca con pantalones, ¿hay algo más cool que eso?</p>
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-orca" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-orca">
@@ -323,18 +408,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
           </div>
         </div>
       </div>
+
+      <!-- Producto Ninja Gi Joe -->
+
       <div class="col">
         <div class="card">
           <img src="./imagenesTiendaNostalgica/gijoe.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Ninja Gi-Joe
-              <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+            <h5 class="card-title">
+            Ninja Gi Joe
             </h5>
-            <p class="card-text fst-italic">Un ninja articulado</p>
+              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Ninja">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal-Ninja" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="../view/imagenesProductosAmpliados/gijoeAmpliado.jpg" alt="zoomNinja">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p class="card-text fst-italic">Un ninja articulado, con accesorios geniales</p>
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-ninja" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-ninja">
-                <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
+                <p class="descripciones">texto de shinobi en desarrollo
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="7">
                   <button type="submit">
@@ -348,14 +455,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
           </div>
         </div>
       </div>
+
+      <!-- Producto Buzz Lightyear --> 
+
       <div class="col">
         <div class="card">
           <img src="./imagenesTiendaNostalgica/buzz.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Buzz Lightyear
-              <img src="../view/imagenesTiendaNostalgica/lupita.png" alt="zoom" class="zoom">
+            <h5 class="card-title">
+            Buzz Lightyear
             </h5>
-            <p class="card-text fst-italic">¡Hasta tu cartera y más allá!</p>
+              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Buzz">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal-Buzz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="../view/imagenesProductosAmpliados/buzzAmpliado.jpg" alt="zoomBuzz">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p class="card-text fst-italic">¡Hasta tu cartera y más allá! Láser no funcional</p>
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-buzz" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-buzz">
