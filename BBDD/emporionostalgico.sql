@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.2
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 06-05-2025 a las 21:07:25
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Servidor: db
+-- Tiempo de generación: 14-05-2025 a las 18:48:57
+-- Versión del servidor: 5.7.44
+-- Versión de PHP: 8.2.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `cesta` (
   `ID_Producto` int(11) NOT NULL,
   `ID_Usuario` int(11) NOT NULL,
   `Cantidad_Cesta` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -45,14 +45,17 @@ CREATE TABLE `favoritos` (
   `ID_Usuario` int(11) NOT NULL,
   `ID_Producto` int(11) NOT NULL,
   `Cantidad_Favoritos` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `favoritos`
 --
 
 INSERT INTO `favoritos` (`ID_Favorito`, `ID_Usuario`, `ID_Producto`, `Cantidad_Favoritos`) VALUES
-(1, 1, 1, 1);
+(1, 1, 1, 1),
+(2, 1, 2, 1),
+(3, 1, 3, 1),
+(4, 1, 4, 1);
 
 -- --------------------------------------------------------
 
@@ -65,7 +68,7 @@ CREATE TABLE `logros` (
   `ID_Usuario` int(11) NOT NULL,
   `Nombre_logro` varchar(50) NOT NULL,
   `Fecha_desbloqueo` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `logros`
@@ -85,7 +88,7 @@ CREATE TABLE `preferencias` (
   `Nombre_Preferencia` varchar(255) NOT NULL,
   `Epoca_Preferencia` date NOT NULL,
   `Cantidad_Preferencia` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -98,7 +101,7 @@ CREATE TABLE `producto` (
   `Nombre_Producto` varchar(255) NOT NULL,
   `Precio` int(11) NOT NULL,
   `Cantidad_Producto` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `producto`
@@ -112,7 +115,19 @@ INSERT INTO `producto` (`ID_Producto`, `Nombre_Producto`, `Precio`, `Cantidad_Pr
 (5, 'Hércules', 6, 1),
 (6, 'Orca Streetshark', 8, 1),
 (7, 'Ninja Gi-Joe', 4, 1),
-(8, 'Buzz Lightyear', 23, 1);
+(8, 'Buzz Lightyear', 23, 1),
+(9, 'Hook', 10, 1),
+(10, 'Jumanji', 19, 1),
+(11, 'El Planeta del Tesoro', 4, 1),
+(12, 'El Valle Encantado 2', 22, 1),
+(13, 'Johnny Mnemonic', 3, 1),
+(14, 'Ace Ventura', 6, 1),
+(15, 'Aladdin', 29, 1),
+(16, 'Blade Runner', 37, 1),
+(17, 'ET el Extraterrestre', 15, 1),
+(18, 'El Gigante de Hierro', 21, 1),
+(19, 'Howard el Pato', 10, 1),
+(20, 'Pocahontas', 17, 1);
 
 -- --------------------------------------------------------
 
@@ -125,7 +140,7 @@ CREATE TABLE `usuario` (
   `Nombre_Usuario` varchar(255) NOT NULL,
   `Correo_Usuario` varchar(50) NOT NULL,
   `Contrasenia_Usuario` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuario`
@@ -134,7 +149,8 @@ CREATE TABLE `usuario` (
 INSERT INTO `usuario` (`ID_Usuario`, `Nombre_Usuario`, `Correo_Usuario`, `Contrasenia_Usuario`) VALUES
 (1, 'Pablo', 'funciona@hola.es', '123'),
 (2, 'Viento', 'mucho@viento.com', '123'),
-(3, 'Brais', 'brais@hola.es', '123');
+(3, 'Brais', 'brais@hola.es', '123'),
+(4, 'usuarioDocker', 'docker@docker.com', '123');
 
 --
 -- Índices para tablas volcadas
@@ -190,7 +206,7 @@ ALTER TABLE `cesta`
 -- AUTO_INCREMENT de la tabla `favoritos`
 --
 ALTER TABLE `favoritos`
-  MODIFY `ID_Favorito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_Favorito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `logros`
@@ -202,13 +218,13 @@ ALTER TABLE `logros`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `ID_Producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `ID_Producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `ID_Usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_Usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

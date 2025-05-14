@@ -121,40 +121,43 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
     <div class="card mb-3">
       <img src="../view/imagenesTiendaNostalgica/bannerSegundaPagina.png" class="card-img-top" alt="...">
     </div>
+
+    <!-- Producto Hook -->
+
     <div class="row row-cols-1 row-cols-md-5 justify-content-center">
       <div class="col">
         <div class="card">
           <img src="./imagenesPeliculas/hook.png" class="card-img-top" alt="Hook">
           <div class="card-body">
             <h5 class="card-title">
-            Hook 
+              Hook
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Hook">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Hook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/hookAmpliado.jpg" alt="productoAmpliadoHook">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Hook">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-Hook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/hookAmpliado.jpg" alt="productoAmpliadoHook">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
+            </div>
             <p class="card-text fst-italic">Grande Robin Williams</p>
             <div class="d-grid gap-2 d-md-block">
               <!-- He utilizado data-bs-target para tener cada producto bien diferenciado a la hora
               de mostrar u ocultar su div correspondiente. Esto hace que se reduzca considerablemente el
               código a la hora de mostrar el texto de cada producto -->
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-casper" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-casper">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-hook" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-hook">
                 <p class="descripciones">Una película encantadora que nunca envejece
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="9">
@@ -170,37 +173,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </div>
       </div>
 
-      <!-- Producto Gárgolas -->
+      <!-- Producto Jumanji -->
+
       <div class="col">
         <div class="card">
           <img src="./imagenesPeliculas/jumanji.png" class="card-img-top" alt="jumanji">
           <div class="card-body">
             <h5 class="card-title">
-            Jumanji
+              Jumanji
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Jumanji">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Jumanji" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/jumanjiAmpliado.jpg" alt="productoAmpliadoJumanji">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Jumanji">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-Jumanji" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/jumanjiAmpliado.jpg" alt="productoAmpliadoJumanji">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
+            </div>
             <p class="card-text fst-italic">¡Es una estampida!</p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-gargola" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-gargola">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-jumanji" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-jumanji">
                 <p class="descripciones">El juego de mesa que cambió nuestras vidas
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="10">
@@ -216,38 +220,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </div>
       </div>
 
-      <!-- Producto Músculo -->
+      <!-- Producto El Planeta del tesoro -->
 
       <div class="col">
         <div class="card">
           <img src="./imagenesPeliculas/planeta.png" class="card-img-top" alt="el planeta del tesoro">
           <div class="card-body">
             <h5 class="card-title">
-            El Planeta del Tesoro
+              El Planeta del Tesoro
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Planeta">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Planeta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/planetaAmpliado.jpg" alt="productoAmpliadoPlaneta">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-Planeta">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-Planeta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/planetaAmpliado.jpg" alt="productoAmpliadoPlaneta">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
+            </div>
             <p class="card-text fst-italic">Una joya infravalorada</p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-musculo" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-musculo">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-planeta" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-planeta">
                 <p class="descripciones">En esta película hay planetas y también tesoros, no es farol
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="11">
@@ -263,39 +267,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </div>
       </div>
 
-      <!-- Producto MetalGreymon -->
+      <!-- Producto Valle Encantado -->
 
       <div class="col">
         <div class="card">
-          <img src="./imagenesPeliculas/pesadilla.png" class="card-img-top" alt="pesadilla antes de navidad">
+          <img src="./imagenesPeliculas/valleEncantado.png" class="card-img-top" alt="en busca del valle encantado">
           <div class="card-body">
             <h5 class="card-title">
-            Pesadilla antes de Navidad
+              El Valle Encantado 2
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-pesadilla">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-pesadilla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/pesadillaAmpliado.jpg" alt="productoAmpliadoPesadilla">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-valle">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-valle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/valleAmpliado.jpg" alt="productoAmpliadoPesadilla">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
-            <p class="card-text fst-italic">El verdadero clásico de Tim Burton</p>
+            </div>
+            <p class="card-text fst-italic">Dinosaurios simpáticos</p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-greymon" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-greymon">
-                <p class="descripciones">La canción de Halloween-town es genial
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-pesadilla" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-pesadilla">
+                <p class="descripciones">Me daba mucho miedo el tiranosaurio 
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="12">
                   <button type="submit">
@@ -313,7 +317,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
 
     <!-- Segunda fila -->
 
-    <!-- Producto Hércules -->
+    <!-- Producto Johhn Mnemonic -->
 
     <div class="row row-cols-1 row-cols-md-5 g-4 mt-4 mb-4 justify-content-center">
       <div class="col">
@@ -321,31 +325,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
           <img src="./imagenesPeliculas/nemonic.png" class="card-img-top" alt="nemonic">
           <div class="card-body">
             <h5 class="card-title">
-            Johnny Mnemonic
+              Johnny Mnemonic
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-nemonic">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-nemonic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/nemonicAmpliado.jpg" alt="productoAmpliadoNemonic">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-nemonic">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-nemonic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/nemonicAmpliado.jpg" alt="productoAmpliadoNemonic">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
+            </div>
             <p class="card-text fst-italic">Matrix antes de matrix</p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-hercules" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-hercules">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-nemonic" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-nemonic">
                 <p class="descripciones">Curiosa distopía cyberpunk
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="13">
@@ -361,38 +365,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </div>
       </div>
 
-      <!-- Producto Orca -->
+      <!-- Producto Ace Ventura -->
 
       <div class="col">
         <div class="card">
           <img src="./imagenesPeliculas/aceventura.png" class="card-img-top" alt="aceventura">
           <div class="card-body">
-           <h5 class="card-title">
-            Ace Ventura
+            <h5 class="card-title">
+              Ace Ventura
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-ace">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-ace" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/aceAmpliado.jpg" alt="aceAmpliado">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-ace">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-ace" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/aceAmpliado.jpg" alt="aceAmpliado">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
+            </div>
             <p class="card-text fst-italic">Jim Carrey nunca falla</p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-orca" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-orca">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-ace" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-ace">
                 <p class="descripciones">la escena del rinoceronte es legendaria
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="14">
@@ -408,38 +412,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </div>
       </div>
 
-      <!-- Producto Ninja Gi Joe -->
+      <!-- Producto Aladdin -->
 
       <div class="col">
         <div class="card">
           <img src="./imagenesPeliculas/aladdin.png" class="card-img-top" alt="aladdin">
           <div class="card-body">
             <h5 class="card-title">
-            Aladdin
+              Aladdin
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-aladdin">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-aladdin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/aladdinAmpliado.jpg" alt="aladdinAmpliado">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-aladdin">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-aladdin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/aladdinAmpliado.jpg" alt="aladdinAmpliado">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
+            </div>
             <p class="card-text fst-italic">Un mundo ideaaaaaal</p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-ninja" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-ninja">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-aladdin" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-aladdin">
                 <p class="descripciones">Por culpa del mono Abu, Aladdin casi muere
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="15">
@@ -455,38 +459,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </div>
       </div>
 
-      <!-- Producto Buzz Lightyear --> 
+      <!-- Producto Blade Runner -->
 
       <div class="col">
         <div class="card">
           <img src="./imagenesPeliculas/bladerunner.png" class="card-img-top" alt="bladerunner">
           <div class="card-body">
             <h5 class="card-title">
-            Blade Runner
+              Blade Runner
             </h5>
-              <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-blade">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal-blade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <img src="../view/imagenesProductosAmpliados/bladeAmpliado.jpg" alt="bladeAmpliado">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-blade">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-blade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/bladeAmpliado.jpg" alt="bladeAmpliado">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
+            </div>
             <p class="card-text fst-italic">Cómo lágrimas en la lluvia</p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-buzz" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
-              <div class="collapse" id="divOculto-buzz">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-blade" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-blade">
                 <p class="descripciones">En su momento esta película fue un fracaso, la verdad, no entiendo por qué: es maravillosa!
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="16">
@@ -503,15 +507,207 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
       </div>
     </div>
 
+    <!-- Tercera fila -->
+
+    <!-- Producto ET -->
+
+    <div class="row row-cols-1 row-cols-md-5 g-4 mt-4 mb-4 justify-content-center">
+      <div class="col">
+        <div class="card">
+          <img src="./imagenesPeliculas/et.png" class="card-img-top" alt="et">
+          <div class="card-body">
+            <h5 class="card-title">
+            E.T
+            </h5>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-et">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-et" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/etAmpliado.jpg" alt="productoAmpliadoET">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="card-text fst-italic">ET quiere irse a casa</p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-hormiga" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-hormiga">
+                <p class="descripciones">Sé buenoo
+                <form action="../controller/favoritoUsuarioController.php" method="POST">
+                  <input type="hidden" name="productoId" value="17">
+                  <button type="submit">
+                    <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                  </button>
+                </form>
+                </p>
+              </div>
+              <h4><span class="badge bg-secondary mt-3">Precio: 15,3€</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto Gigante de Hierro -->
+
+      <div class="col">
+        <div class="card">
+          <img src="./imagenesPeliculas/gigante.png" class="card-img-top" alt="gigante">
+          <div class="card-body">
+            <h5 class="card-title">
+              El Gigante de Hierro
+            </h5>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-gigante">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-gigante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/giganteAmpliado.jpg" alt="giganteAmpliado">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="card-text fst-italic">Poco se habla de esta peli</p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-gigante" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-gigante">
+                <p class="descripciones">¿Saldrá algún día el gigante de hierro 2?
+                <form action="../controller/favoritoUsuarioController.php" method="POST">
+                  <input type="hidden" name="productoId" value="18">
+                  <button type="submit">
+                    <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                  </button>
+                </form>
+                </p>
+              </div>
+              <h4><span class="badge bg-secondary mt-3">Precio: 20,90€</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto Howard el Pato -->
+
+      <div class="col">
+        <div class="card">
+          <img src="./imagenesPeliculas/howard.png" class="card-img-top" alt="aladdin">
+          <div class="card-body">
+            <h5 class="card-title">
+              Howard el Pato
+            </h5>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-pato">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-pato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/howardAmpliado.jpg" alt="aladdinAmpliado">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="card-text fst-italic">Este pato es un descarado</p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-howard" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-howard">
+                <p class="descripciones">Aunque no lo parezca, Howard es un personaje de Marvel
+                <form action="../controller/favoritoUsuarioController.php" method="POST">
+                  <input type="hidden" name="productoId" value="19">
+                  <button type="submit">
+                    <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                  </button>
+                </form>
+                </p>
+              </div>
+              <h4><span class="badge bg-secondary mt-3">Precio: 10€</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto Pocahontas -->
+
+      <div class="col">
+        <div class="card">
+          <img src="./imagenesPeliculas/pocahontas.png" class="card-img-top" alt="pocahontas">
+          <div class="card-body">
+            <h5 class="card-title">
+              Pocahontas
+            </h5>
+            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-pocahontas">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-pocahontas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="../view/imagenesProductosAmpliados/pocahontasAmpliada.jpg" alt="bladeAmpliado">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="card-text fst-italic">Vive libre y salvaje</p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-pocahontas" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
+              <div class="collapse" id="divOculto-pocahontas">
+                <p class="descripciones">Probablemente ésta sea una de las películas que más me ponían de pequeño
+                <form action="../controller/favoritoUsuarioController.php" method="POST">
+                  <input type="hidden" name="productoId" value="20">
+                  <button type="submit">
+                    <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                  </button>
+                </form>
+                </p>
+              </div>
+              <h4><span class="badge bg-secondary mt-3">Precio: 7€</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Paginación Bootstrap -->
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item disabled">
           <a class="page-link">Anterior</a>
         </li>
-        <li class="page-item"><a class="page-link" href="menuPrincipal.php">1</a></li>
+        <li class="page-item"><a class="page-link" href="./menuPrincipal.php">1</a></li>
         <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="./página3.php">3</a></li>
         <li class="page-item">
           <a class="page-link" href="#">Siguiente</a>
         </li>
