@@ -115,35 +115,89 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
         </ul>
       </div>
     </div>
+    <!-- Banner decorativo -->
+    <div class="card mb-3">
+      <img src="../view/imagenesTiendaNostalgica/bannerTerceraPágina.png" class="card-img-top" alt="...">
+    </div>
+    <div class="containerJuegos">
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/crashRD.png" alt="crash bandicoot">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/koudelkaRD.png" alt="koudelka">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/tombiRD.png" alt="tombi">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/silius.png" alt="Journey to Silius">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/donkey.png" alt="Donkey Kong Country 2">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/yoshis.png" alt="Yoshi's Island">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/kidklown.png" alt="Kid Klown in Crazy Chase">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/marioworld.png" alt="Super Mario World">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/residentEvil.png" alt="Resident Evil 4">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/darkCloud.png" alt="Dark Cloud">
+
+      </div>
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/timesplitters3.png" alt="TimeSplitters 3">
+      </div>
+      
+      <div class="juegoZoom">
+        <img src="imagenesVideojuegos/sanAndreas.png" alt="Grand Theft Auto: San Andreas">
+      </div>
+
+    </div>
   </header>
   <!-- Paginación Bootstrap -->
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
-          <a class="page-link">Anterior</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="./menuPrincipal.php">1</a></li>
-        <li class="page-item"><a class="page-link" href="./página2.php">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Siguiente</a>
-        </li>
-      </ul>
-    </nav>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Anterior</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="./menuPrincipal.php">1</a></li>
+      <li class="page-item"><a class="page-link" href="./página2.php">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Siguiente</a>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- Footer -->
+  <!-- Footer -->
 
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
-            <svg class="bi" width="30" height="24" aria-hidden="true">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <span class="mb-3 mb-md-0 fw-bolder text-decoration-underline">© 2025 El Emporio Nostálgico</span>
-        </div>
-    </div>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+          <svg class="bi" width="30" height="24" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 fw-bolder text-decoration-underline">© 2025 El Emporio Nostálgico</span>
+      </div>
+  </div>
   </main>
   <!-- Bootstrap Bundle con JS incluido -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

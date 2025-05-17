@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: db
--- Tiempo de generación: 14-05-2025 a las 18:48:57
+-- Tiempo de generación: 17-05-2025 a las 09:47:13
 -- Versión del servidor: 5.7.44
 -- Versión de PHP: 8.2.27
 
@@ -55,7 +55,9 @@ INSERT INTO `favoritos` (`ID_Favorito`, `ID_Usuario`, `ID_Producto`, `Cantidad_F
 (1, 1, 1, 1),
 (2, 1, 2, 1),
 (3, 1, 3, 1),
-(4, 1, 4, 1);
+(4, 1, 4, 1),
+(5, 1, 9, 1),
+(6, 1, 11, 1);
 
 -- --------------------------------------------------------
 
@@ -127,7 +129,17 @@ INSERT INTO `producto` (`ID_Producto`, `Nombre_Producto`, `Precio`, `Cantidad_Pr
 (17, 'ET el Extraterrestre', 15, 1),
 (18, 'El Gigante de Hierro', 21, 1),
 (19, 'Howard el Pato', 10, 1),
-(20, 'Pocahontas', 17, 1);
+(20, 'Pocahontas', 17, 1),
+(21, 'Crash Bandicoot 3', 26, 1),
+(22, 'Koudelka', 10, 1),
+(23, 'Tombi', 40, 1),
+(24, 'Journey To Silius', 14, 1),
+(25, 'Donkey Kong Country 2', 55, 1),
+(26, 'Super Mario World', 5, 1),
+(27, 'Resident Evil 4', 38, 1),
+(28, 'Dark Cloud', 8, 1),
+(29, 'TimeSplitters 3', 40, 1),
+(30, 'Grand Theft Auto: San Andreas', 13, 1);
 
 -- --------------------------------------------------------
 
@@ -206,7 +218,7 @@ ALTER TABLE `cesta`
 -- AUTO_INCREMENT de la tabla `favoritos`
 --
 ALTER TABLE `favoritos`
-  MODIFY `ID_Favorito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_Favorito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `logros`
@@ -218,7 +230,7 @@ ALTER TABLE `logros`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `ID_Producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `ID_Producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`

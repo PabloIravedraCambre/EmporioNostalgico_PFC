@@ -51,6 +51,30 @@
     transition: .3s ease;
   }
 
+  .containerJuegos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    justify-items: end;
+  }
+
+  .juegoZoom:hover img{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: grab;
+  }
+
+  /* Info obtenida de https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_display_element_hover */
+
+  .tituloOculto{
+    display: none;
+  }
+
+  .juegoZoom:hover .tituloOculto{
+    display: block; 
+  }
+  
+
   
  
 
