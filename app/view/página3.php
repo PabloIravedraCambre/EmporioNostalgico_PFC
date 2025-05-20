@@ -124,57 +124,58 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
       <div>
         <h1 id="tituloJuego"></h1>
         <p id="descripcionJuego"></p>
+        <img class="juegoImagenModal" alt="imagen del Juego">
       </div>
       <button data-close-modal>Cerrar</button>
     </dialog>
 
     <div class="containerJuegos">
       <div class="juegoZoom" data-juego="Crash Bandicoot">
-        <img src="imagenesVideojuegos/crashRD.png" alt="crash bandicoot">
+        <img src="imagenesVideojuegos/crashRD.png" alt="crash bandicoot" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Koudelka">
-        <img src="imagenesVideojuegos/koudelkaRD.png" alt="koudelka">
+        <img src="imagenesVideojuegos/koudelkaRD.png" alt="koudelka" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Tombi">
-        <img src="imagenesVideojuegos/tombiRD.png" alt="tombi">
+        <img src="imagenesVideojuegos/tombiRD.png" alt="tombi" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Journey to Silius">
-        <img src="imagenesVideojuegos/silius.png" alt="Journey to Silius">
+        <img src="imagenesVideojuegos/silius.png" alt="Journey to Silius" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Donkey Kong Country 2">
-        <img src="imagenesVideojuegos/donkey.png" alt="Donkey Kong Country 2">
+        <img src="imagenesVideojuegos/donkey.png" alt="Donkey Kong Country 2" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Yoshi's Island">
-        <img src="imagenesVideojuegos/yoshis.png" alt="Yoshi's Island">
+        <img src="imagenesVideojuegos/yoshis.png" alt="Yoshi's Island" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Kid Klown in Crazy Chase">
-        <img src="imagenesVideojuegos/kidklown.png" alt="Kid Klown in Crazy Chase">
+        <img src="imagenesVideojuegos/kidklown.png" alt="Kid Klown in Crazy Chase" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Super Mario World">
-        <img src="imagenesVideojuegos/marioworld.png" alt="Super Mario World">
+        <img src="imagenesVideojuegos/marioworld.png" alt="Super Mario World" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Resident Evil 4">
-        <img src="imagenesVideojuegos/residentEvil.png" alt="Resident Evil 4">
+        <img src="imagenesVideojuegos/residentEvil.png" alt="Resident Evil 4" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="Dark Cloud">
-        <img src="imagenesVideojuegos/darkCloud.png" alt="Dark Cloud">
+        <img src="imagenesVideojuegos/darkCloud.png" alt="Dark Cloud" class="juegoImagen">
 
       </div>
       <div class="juegoZoom" data-juego="TimeSplitters 3">
-        <img src="imagenesVideojuegos/timesplitters3.png" alt="TimeSplitters 3">
+        <img src="imagenesVideojuegos/timesplitters3.png" alt="TimeSplitters 3" class="juegoImagen">
       </div>
       
       <div class="juegoZoom" data-juego="Grand Theft Auto: San Andreas">
-        <img src="imagenesVideojuegos/sanAndreas.png" alt="Grand Theft Auto: San Andreas">
+        <img src="imagenesVideojuegos/sanAndreas.png" alt="Grand Theft Auto: San Andreas" class="juegoImagen">
       </div>
 
     </div>
