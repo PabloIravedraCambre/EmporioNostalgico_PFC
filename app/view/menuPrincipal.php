@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
       </div>
       <div id="contenedorList">
         <ul>
-          <li><a href="#"><img src="./imagenesTiendaNostalgica/carrito.png" alt="carrito" class="iconos">Carro</a></li>
+          <li><a href="paginaCesta.php"><img src="./imagenesTiendaNostalgica/carrito.png" alt="carrito" class="iconos">Carro</a></li>
           <li><a href="paginaFavoritos.php"><img src="./imagenesTiendaNostalgica/favoritos.png" alt="favoritos" class="iconos">Favoritos</a></li>
           <li><a href="iniciarSesion.php"><img src="./imagenesTiendaNostalgica/iniciarSesion.png" alt="loginUsuario" class="iconos">Iniciar Sesión</a></li>
           <li><a href="páginaLogros.php"><img src="./imagenesTiendaNostalgica/logrosS.png" alt="logrosUsuario" class="iconos">Logros</a></li>
@@ -160,7 +160,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="1">
                   <button type="submit">
-                    <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    <i class="bi bi-bag-heart-fill"></i>
+                  </button>
+                </form>
+                <!-- Formulario compra producto -->
+                 <form action="../controller/cestaController.php" method="POST">
+                  <input type="hidden" name="idProducto" value="1">
+                  <button type="submit">
+                    <i class="bi bi-cart"></i></i>
                   </button>
                 </form>
                 </p>
@@ -206,7 +213,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="2">
                   <button type="submit">
-                    <img src="../view/imagenesTiendaNostalgica/coraFavoritos.png" alt="iconoFavorito">
+                    <i class="bi bi-bag-heart-fill"></i>
+                  </button>
+                </form>
+                <!-- Formulario compra producto -->
+                 <form action="../controller/cestaController.php" method="POST">
+                  <input type="hidden" name="idProducto" value="2">
+                  <button type="submit">
+                    <i class="bi bi-cart"></i></i>
                   </button>
                 </form>
                 </p>
