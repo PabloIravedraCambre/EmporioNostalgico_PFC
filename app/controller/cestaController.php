@@ -45,16 +45,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "INSERT INTO cesta (ID_Usuario, ID_Producto, Cantidad_Cesta) VALUES (?, ?, 1)"
             );
             $consultaInsertar->execute([$usuarioId, $ID_Producto]);
+
+            $_SESSION['mensaje'] = "Producto agregado a la cesta correctamente.";
+            header ('Location: paginaCesta.php');
+            exit;
+
         } else {
-            // Paso 7: Si ya está en la cesta, incrementamos la cantidad
-            $consultaActualizar = $conexion->prepare(
-                "UPDATE cesta SET Cantidad_Cesta = Cantidad_Cesta + 1 WHERE ID_Usuario = ? AND ID_Producto = ?"
-            );
-            $consultaActualizar->execute([$usuarioId, $ID_Producto]);
+            // Producto ya en la cesta
+            $_SESSION['mensaje'] = "Producto ya disponible en la cesta.";
+            header('Location: ../view/paginaCesta.php');
+            exit;
         }
 
         // Paso 8: Redirigimos a la página de la cesta
-        header('Location: paginaCesta.php');
+        header('Location: ../view/paginaCesta.php');
         exit;
 
     } catch (PDOException $e) {

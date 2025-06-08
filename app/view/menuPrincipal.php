@@ -159,6 +159,7 @@ if (isset($_SESSION['nombre'])) {
               <div class="collapse" id="divOculto-casper">
                 <p class="descripciones">Esta mansión hará las delicias de los más pequeños de la casa.
                   Cuenta con un diseño intrincado, repleto de secretos y pasadizos ocultos
+                </p>
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="1">
                   <button type="submit">
@@ -211,7 +212,7 @@ if (isset($_SESSION['nombre'])) {
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-gargola" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-gargola">
-                <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
+                <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias</p>
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="2">
                   <button type="submit">
@@ -265,7 +266,7 @@ if (isset($_SESSION['nombre'])) {
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-musculo" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-musculo">
-                <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias
+                <p class="descripciones">Las gárgolas son todo un clásico de nuestras infancias</p>
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="3">
                   <button type="submit">
@@ -541,7 +542,7 @@ if (isset($_SESSION['nombre'])) {
       <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
-            <svg class="bi" width="30" height="24" aria-hidden="true">
+            <svg class="bi" width="30" height="24">
               <use xlink:href="#bootstrap"></use>
             </svg>
           </a>

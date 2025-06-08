@@ -1,7 +1,10 @@
 <?php
 session_start();
-if (isset($_SESSION['nombre'])) {
-    echo "<h2>Bienvenid@, " . $_SESSION['nombre'] . "</h2>";
+if (isset($_SESSION['mensaje'])) {
+    echo '<div class="alert alert-info" role="alert">'
+         . $_SESSION['mensaje'] .
+         '</div>';
+    unset($_SESSION['mensaje']);
 }
 
 
