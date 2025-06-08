@@ -9,7 +9,7 @@ function getDBConnection() {
 
     try {
         // Intentamos establecer la conexión con PDO
-        $conn = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
+        $conn = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8mb4", $username, $password);
         
         // Establecemos el modo de error para que PDO lance excepciones
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

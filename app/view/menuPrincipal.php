@@ -1,16 +1,5 @@
 <?php
 session_start();
-if (isset($_SESSION['nombre'])) {
-  echo "<li>Bienvenid@, " . $_SESSION['nombre'] . "</li>";
-?>
-  <form action="" method="POST" id="posicionLogout">
-    <input type="submit" name="logout" value="Cerrar sesión">
-  </form>
-  <form action="" method="POST" id="posicionUpdate">
-    <input type="submit" name="update" value="Actualizar">
-  </form>
-<?php
-}
 
 //Función para desloguearse y destruir la sesión
 
@@ -25,6 +14,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
   header("Location: actualizarUsuario.php"); //Integrar función de actualizar los datos del usuario
   exit();
 }
+
+if (isset($_SESSION['nombre'])) {
+  echo "<li>Bienvenid@, " . $_SESSION['nombre'] . "</li>";
+?>
+  <form action="" method="POST" id="posicionLogout">
+    <input type="submit" name="logout" value="Cerrar sesión">
+  </form>
+  <form action="" method="POST" id="posicionUpdate">
+    <input type="submit" name="update" value="Actualizar">
+  </form>
+<?php
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

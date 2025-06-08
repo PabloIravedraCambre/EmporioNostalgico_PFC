@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['nombre'])) {
-    echo "<li>Bienvenid@, " . $_SESSION['nombre'] . "</li>";
+    echo "<h2>Bienvenid@, " . $_SESSION['nombre'] . "</h2>";
 }
 
 
@@ -16,7 +16,7 @@ try {
 
     $idUsuario = $_SESSION['id_usuario']; // Este ID debe haberse guardado al iniciar sesión
 
-
+    
     // Paso 3: Establecemos conexión con la base de datos
     /**
      * @var PDO $conexion esto es para hacer la conexión con la base de datos
@@ -39,8 +39,6 @@ try {
     );
     $consulta->execute([$idUsuario]);
 
-
-
     /**
      * @var array $favoritos es un array asociativo que contiene los favoritos del usuario
      * que esté logueado en ese momento, para luego mostrarlos en la página
@@ -50,16 +48,15 @@ try {
 
     // Paso 5: Mostramos los productos en la cesta si existen
     if (!empty($cesta)) {
+        echo "<ul class='list-group'>";
+        echo "<p>Productos en tu cesta:</p>";
         foreach ($cesta as $producto) {
-            echo "<ul class='list-group'>";
             echo "<li class='list-group-item'>{$producto['Nombre_Producto']}</li>";
-            echo "<hr>";
-            echo "</div>";
+            echo "<hr>";  
         }
     } else {
         echo "<div class='favorito-item'>";
         echo "<p>No tienes productos en la cesta.</p>";
-        echo "</div>";
     }
     /**
      * En caso de que haya algún tipo de error, se cargará un mensaje que alerta
