@@ -201,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
     <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
-          <svg class="bi" width="30" height="24" aria-hidden="true">
+          <svg class="bi" width="30" height="24">
             <use xlink:href="#bootstrap"></use>
           </svg>
         </a>

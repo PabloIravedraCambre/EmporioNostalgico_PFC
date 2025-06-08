@@ -136,7 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-Hook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-Hook" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-Jumanji" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-Jumanji" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -233,7 +233,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-Planeta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-Planeta" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -280,7 +280,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-valle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-valle" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -299,7 +299,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
             <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" data-bs-toggle="collapse" href="#divOculto-pesadilla" aria-expanded="false" aria-controls="divOculto">Ver Producto</button>
               <div class="collapse" id="divOculto-pesadilla">
-                <p class="descripciones">Me daba mucho miedo el tiranosaurio 
+                <p class="descripciones">Me daba mucho miedo el tiranosaurio
                 <form action="../controller/favoritoUsuarioController.php" method="POST">
                   <input type="hidden" name="productoId" value="12">
                   <button type="submit">
@@ -331,7 +331,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-nemonic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-nemonic" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -378,7 +378,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-ace" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-ace" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -425,7 +425,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-aladdin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-aladdin" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -472,7 +472,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-blade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-blade" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -517,13 +517,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
           <img src="./imagenesPeliculas/et.png" class="card-img-top" alt="et">
           <div class="card-body">
             <h5 class="card-title">
-            E.T
+              E.T
             </h5>
             <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-et">
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-et" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-et" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -570,7 +570,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-gigante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-gigante" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -617,7 +617,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-pato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-pato" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -664,7 +664,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
               <i class="bi bi-zoom-in"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal-pocahontas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+            <div class="modal fade" id="exampleModal-pocahontas" tabindex="-1" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -720,7 +720,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
       <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
-            <svg class="bi" width="30" height="24" aria-hidden="true">
+            <svg class="bi" width="30" height="24">
               <use xlink:href="#bootstrap"></use>
             </svg>
           </a>

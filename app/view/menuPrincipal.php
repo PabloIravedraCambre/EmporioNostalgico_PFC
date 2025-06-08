@@ -135,7 +135,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Casper" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-Casper" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -192,7 +192,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Gargola" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-Gargola" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -246,7 +246,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Musculo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-Musculo" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -293,7 +293,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-greymon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-greymon" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -344,7 +344,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Hercules" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-Hercules" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -391,7 +391,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Orca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-Orca" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -438,7 +438,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Ninja" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-Ninja" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -485,7 +485,7 @@ if (isset($_SESSION['nombre'])) {
                 <i class="bi bi-zoom-in"></i>
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal-Buzz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="inert">
+              <div class="modal fade" id="exampleModal-Buzz" tabindex="-1" aria-labelledby="exampleModalLabel">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
